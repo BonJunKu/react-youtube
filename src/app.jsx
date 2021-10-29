@@ -19,7 +19,6 @@ function App() {
       .then((response) => response.json())
       .then((result) => setVideos(result.items))
       .catch((error) => console.log('error', error));
-    console.log('useEffect');
   }, []);
 
   return <VideoList videos={videos} />;
